@@ -7,10 +7,10 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "customerAddress" : "Jw1obrjz2C4IIbMvWI8bEKL3F",
-      "customerContact" : "Ws869Q4DCvlDRlcqRBXMZDJy0",
-      "customerNo" : "E62YjYJ7mxifD1VhVbTuXhqFl",
-      "customerName" : "q4dLzHrOdRplksMeygWAZlr0I"
+      "customerAddress" : "37GyEpxa9D4dYeYtZgwBaBTjc",
+      "customerContact" : "ToThLMz13Z9b05gKNw7hmvN6o",
+      "customerNo" : "1zjs86UWs9yIpxRDqfKALBlo5",
+      "customerName" : "Iwv8AAVbJTMReIOKhbcdQUhY5"
     },
     "method" : "POST",
     "requestUrl" : "/rest/customers/",
@@ -32,10 +32,10 @@
     "userName" : "AppAdmin"
   },
   "outputData" : [ {
-    "customerAddress" : "Jw1obrjz2C4IIbMvWI8bEKL3F",
-    "customerContact" : "Ws869Q4DCvlDRlcqRBXMZDJy0",
-    "customerNo" : "E62YjYJ7mxifD1VhVbTuXhqFl",
-    "customerName" : "q4dLzHrOdRplksMeygWAZlr0I"
+    "customerAddress" : "37GyEpxa9D4dYeYtZgwBaBTjc",
+    "customerContact" : "ToThLMz13Z9b05gKNw7hmvN6o",
+    "customerNo" : "1zjs86UWs9yIpxRDqfKALBlo5",
+    "customerName" : "Iwv8AAVbJTMReIOKhbcdQUhY5"
   } ],
   "responseCode" : 200,
   "verifyUsingService" : false,

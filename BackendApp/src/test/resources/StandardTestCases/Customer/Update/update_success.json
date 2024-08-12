@@ -7,10 +7,10 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "customerAddress" : "zUpGGwFGpagUKT2DuuXw9UEEj",
-      "customerContact" : "jNF3yBNBdyPJjmGiTu2dmd5NN",
-      "customerNo" : "x6zP96t0S2JaNXnVSTgOf4TxJ",
-      "customerName" : "vWG8IiGkthN87tJTxWOTKfgp6"
+      "customerAddress" : "chYtlxevz0sWFUg0QYQyrRByM",
+      "customerContact" : "TCkk9jGzwoItFllsL7zkotJ5q",
+      "customerNo" : "NAX7RLd1EWUqMLx8Joxs9j7zd",
+      "customerName" : "yKgB9n9ehEbtGXVFW8cHydod9"
     },
     "method" : "POST",
     "requestUrl" : "/rest/customers/",
@@ -25,10 +25,10 @@
     "foreignKeyConfiguration" : { },
     "serviceType" : "UPDATE",
     "inputData" : {
-      "customerAddress" : "BYHVGfHFWBcZawBY6QDLNHA5o",
-      "customerContact" : "Yd74QP072MY6bkgi4TEHzjfB7",
-      "customerNo" : "xWYW4480ICmq3ltk2l6yj7XKV",
-      "customerName" : "CX2UvN8jxqmpWWsPRKzOFktt6"
+      "customerAddress" : "axc44BfaNRmIfkrY0O8BGROHp",
+      "customerContact" : "u2ZvzWZcqgXompSQAT0e9KXq2",
+      "customerNo" : "zcApxfgaqj96FhsPcwpox7kqw",
+      "customerName" : "eXtRQjVGNXNO4KugL3bucoWFC"
     },
     "method" : "PUT",
     "requestUrl" : "/rest/customers/",
@@ -39,10 +39,10 @@
     "userName" : "AppAdmin"
   },
   "outputData" : [ {
-    "customerAddress" : "BYHVGfHFWBcZawBY6QDLNHA5o",
-    "customerContact" : "Yd74QP072MY6bkgi4TEHzjfB7",
-    "customerNo" : "xWYW4480ICmq3ltk2l6yj7XKV",
-    "customerName" : "CX2UvN8jxqmpWWsPRKzOFktt6"
+    "customerAddress" : "axc44BfaNRmIfkrY0O8BGROHp",
+    "customerContact" : "u2ZvzWZcqgXompSQAT0e9KXq2",
+    "customerNo" : "zcApxfgaqj96FhsPcwpox7kqw",
+    "customerName" : "eXtRQjVGNXNO4KugL3bucoWFC"
   } ],
   "responseCode" : 200,
   "verifyUsingService" : false,

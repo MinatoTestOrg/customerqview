@@ -1,0 +1,3 @@
+com.minatogithuborg.customerqview.config.ApplicationRepositoriesAutoConfiguration
+com.minatogithuborg.customerqview.config.ApplicationTransactionManagersAutoConfig
+com.minatogithuborg.customerqview.config.ApplicationProvidersAutoConfiguration

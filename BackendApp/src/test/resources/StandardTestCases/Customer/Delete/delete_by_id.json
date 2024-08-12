@@ -1,0 +1,43 @@
+{
+  "name" : "DELETE_BY_ID",
+  "description" : "Delete by id",
+  "inputModelName" : "",
+  "outputModelName" : "",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "xbhCl0n1RKG80CheCJFBg53f9",
+      "customerContact" : "5vgYMNo1CbZipEva4dAGh0ANo",
+      "customerNo" : "uO6iyXS23dFZMVZzvkyyv8ke0",
+      "customerName" : "hKCpQntTCcJuYmhRHeQ4MdcPA"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "DELETE_BY_IDS",
+    "method" : "DELETE",
+    "requestUrl" : "/rest/customers/{ids}",
+    "userName" : "AppAdmin"
+  },
+  "deleteRecordInfo" : [ {
+    "tableRecordNo" : 1,
+    "tableName" : "Customer"
+  } ],
+  "outputData" : [ ],
+  "responseCode" : 200,
+  "verifyUsingService" : true,
+  "verificationRequestDetails" : {
+    "method" : "GET",
+    "requestUrl" : "/rest/customers/{sid}",
+    "expectedResponseCode" : 204,
+    "userName" : "AppAdmin"
+  }
+}

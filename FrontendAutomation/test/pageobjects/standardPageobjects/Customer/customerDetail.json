@@ -1,0 +1,27 @@
+{
+  "components" : [ {
+    "name" : "Form",
+    "tests" : [ {
+      "name" : "Form",
+      "testcases" : [ ]
+    }, {
+      "name" : "Customer No",
+      "testcases" : [ ]
+    }, {
+      "name" : "Customer Name",
+      "testcases" : [ ]
+    }, {
+      "name" : "Customer Address",
+      "testcases" : [ ]
+    }, {
+      "name" : "Customer Contact",
+      "testcases" : [ ]
+    } ]
+  } ],
+  "pageUrl" : "/#/customer/customerdetail",
+  "elementConfirm" : {
+    "selector" : "#main-container",
+    "time" : 3000
+  },
+  "pageName" : "Customer detail"
+}

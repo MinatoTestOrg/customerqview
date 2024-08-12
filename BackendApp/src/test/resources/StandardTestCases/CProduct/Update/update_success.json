@@ -1,0 +1,51 @@
+{
+  "name" : "UPDATE_SUCCESS",
+  "description" : "Update success",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.CProduct",
+  "outputModelName" : "com.minatogithuborg.customerqview.model.CProduct",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "ENmcwimXXIyVozxzTIVBdyDV0",
+      "productName" : "2xmtf4mQkRU61me6OtHz8oMYG"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "foreignKeyConfiguration" : { },
+    "serviceType" : "UPDATE",
+    "inputData" : {
+      "productId" : "L8yVZ2ynOPeYLeOVNxysWqfsp",
+      "productName" : "ZPdywM6FsHvLvO5unrQf2lP0w"
+    },
+    "method" : "PUT",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ {
+    "productId" : "L8yVZ2ynOPeYLeOVNxysWqfsp",
+    "productName" : "ZPdywM6FsHvLvO5unrQf2lP0w"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "CProduct" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/cproducts/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

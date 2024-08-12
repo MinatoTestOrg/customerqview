@@ -1,0 +1,23 @@
+{
+  "create" : {
+    "requestDetails" : {
+      "method" : "POST",
+      "requestUrl" : "/rest/corders/",
+      "inputData" : [ {
+        "orderNo" : "v8MWOSgw6OSlAOKa4xYFV4GrT",
+        "quantity" : 770,
+        "price" : 648.43
+      }, {
+        "orderNo" : "L11ewaKtexCl39sunvGpxuCss",
+        "quantity" : 128,
+        "price" : 852.86
+      } ]
+    }
+  },
+  "delete" : {
+    "requestDetails" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/corders/{ids}"
+    }
+  }
+}

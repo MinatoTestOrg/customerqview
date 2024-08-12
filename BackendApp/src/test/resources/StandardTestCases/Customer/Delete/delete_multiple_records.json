@@ -1,0 +1,119 @@
+{
+  "name" : "DELETE_MULTIPLE_RECORDS",
+  "description" : "Delete multiple records",
+  "inputModelName" : "",
+  "outputModelName" : "",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "ze0paAERnfCq6zib8cq6ggYPc",
+      "customerContact" : "o9zZcTHGccdPrGTojTnyx4EHY",
+      "customerNo" : "oBIxkeVWyabLXi6mBB5Y7aQrr",
+      "customerName" : "bNxSYeUILjZRbfWnw2N8G24QY"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "VmAnG0I371EKbYJEJcEsX55EV",
+      "customerContact" : "NxWk0ilDMDhTVjwYeqd5sCKJz",
+      "customerNo" : "ldNp7j8fX0TEkLIObGH8Q4A5N",
+      "customerName" : "3V2RxlNo9UItiT4EMe2B9bz1I"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 2,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "A9zrpIC8My7aJb5SWiPnDKTjX",
+      "customerContact" : "1sngOgoAvvUlQRlXUmfuZLBgN",
+      "customerNo" : "GQ8RfuYi26yQEPA5HFHGBnhx6",
+      "customerName" : "6gkj0AMG4M00t1QPVjtyiHPm0"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 3,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "9Sm3rL9xvVIGjXloFKR1LUGfs",
+      "customerContact" : "pHctTpkIptvvURrS5zYTUcxW9",
+      "customerNo" : "L0TXav5MPG6tRLYgaQCsRFsIv",
+      "customerName" : "dXyjsNu9aQCieG2OQK8xI93W5"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 4,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "hb9e3V9nz4ChyLNb2EMx7Zk3C",
+      "customerContact" : "LT5fpOrpYazNeHlv9XSrsosS6",
+      "customerNo" : "7QadX81mm0ekqjo5jcESCb1Gq",
+      "customerName" : "Q0jE2UbBeHnsWiuZUVBU3DE8K"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 5,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "DELETE_MULTIPLE_RECORDS",
+    "method" : "DELETE",
+    "requestUrl" : "/rest/customers/{ids}",
+    "userName" : "AppAdmin"
+  },
+  "deleteRecordInfo" : [ {
+    "tableRecordNo" : 1,
+    "tableName" : "Customer"
+  }, {
+    "tableRecordNo" : 2,
+    "tableName" : "Customer"
+  }, {
+    "tableRecordNo" : 3,
+    "tableName" : "Customer"
+  }, {
+    "tableRecordNo" : 4,
+    "tableName" : "Customer"
+  }, {
+    "tableRecordNo" : 5,
+    "tableName" : "Customer"
+  } ],
+  "outputData" : [ ],
+  "responseCode" : 200,
+  "verifyUsingService" : true,
+  "verificationRequestDetails" : {
+    "method" : "GET",
+    "requestUrl" : "/rest/customers/{sid}",
+    "expectedResponseCode" : 204,
+    "userName" : "AppAdmin"
+  }
+}

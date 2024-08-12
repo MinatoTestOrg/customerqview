@@ -1,0 +1,130 @@
+{
+  "name" : "READ_DATATABLE",
+  "description" : "Read datatable",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.",
+  "outputModelName" : "com.minatogithuborg.customerqview.model.",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "Y4Gr2Nwjkzfpy7uPvEm8O9z48",
+      "customerContact" : "CtdXohC8qsBvUIH7USefCBjwg",
+      "customerNo" : "UKbyqoYwLQluynN7I1UfHRdMp",
+      "customerName" : "KGq3u88vyYy477beI9V2iZjKM"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "tnUe0cA65EabDK8s77PYYosG9",
+      "customerContact" : "egsvpfQosyKUiaozxWYCIRESs",
+      "customerNo" : "zg9Vj2s7wM2NBsQygF0UmDQrj",
+      "customerName" : "VDkyNUWRj07gEnaJiNTGrXSMC"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 2,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "soZFdtE2W0S1bIUvwSzM54IEy",
+      "customerContact" : "VxBomi8bojbLRJtiaHmNQbXje",
+      "customerNo" : "VUrznBJijyhYZZ33T8KlGLDBL",
+      "customerName" : "cRzLC72qufNokP9lAZjgF7NwX"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 3,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "VWUtnDSPl1WywCcvYbLslnadV",
+      "customerContact" : "lIqtKUazlQ0rFjzwR6YZOUwZi",
+      "customerNo" : "6O49YFzRsmf2u5izEgPj5dUSw",
+      "customerName" : "vC2pfZbd4NkdrAIyT8FqUnKLl"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 4,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "kMRSRlLt0R3eFIA0xVVTDEBWz",
+      "customerContact" : "JaucftW4XGBLRwotrn5p1IVYB",
+      "customerNo" : "byPHyqr1zYmWUxMvxA0cQMjQN",
+      "customerName" : "CFvf4CESeOqYTWE3ev42AfFPp"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 5,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "GET_DATATABLE",
+    "inputData" : {
+      "start" : 0,
+      "length" : 5,
+      "search" : { },
+      "columns" : [ {
+        "data" : "customerNo",
+        "name" : "customerNo",
+        "orderable" : true,
+        "searchable" : true
+      } ],
+      "order" : [ {
+        "column" : "createdDate",
+        "dir" : "desc"
+      } ]
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/datatable",
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ {
+    "customerNo" : "UKbyqoYwLQluynN7I1UfHRdMp"
+  }, {
+    "customerNo" : "zg9Vj2s7wM2NBsQygF0UmDQrj"
+  }, {
+    "customerNo" : "VUrznBJijyhYZZ33T8KlGLDBL"
+  }, {
+    "customerNo" : "6O49YFzRsmf2u5izEgPj5dUSw"
+  }, {
+    "customerNo" : "byPHyqr1zYmWUxMvxA0cQMjQN"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Customer" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/customers/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "components" : [ {
+    "name" : "Form",
+    "tests" : [ {
+      "name" : "Form",
+      "testcases" : [ ]
+    }, {
+      "name" : "Product ID",
+      "testcases" : [ ]
+    }, {
+      "name" : "Product Name",
+      "testcases" : [ ]
+    } ]
+  } ],
+  "pageUrl" : "/#/cproduct/cproductdetail",
+  "elementConfirm" : {
+    "selector" : "#main-container",
+    "time" : 3000
+  },
+  "pageName" : "CProduct detail"
+}

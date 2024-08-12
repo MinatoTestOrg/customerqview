@@ -1,0 +1,34 @@
+{
+  "name" : "CREATE_SUCCESS",
+  "description" : "Create success",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.Customer",
+  "outputModelName" : "com.minatogithuborg.customerqview.model.Customer",
+  "setUp" : [ ],
+  "requestDetails" : {
+    "serviceType" : "CREATE",
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  },
+  "outputData" : [ {
+    "customerAddress" : "4YJAB7wb6zdcrTA7r6brsftQj",
+    "customerContact" : "pWMpmUYwC6e8wyqtllAjeMC1L",
+    "customerNo" : "grrSH154B8sNEEEApSOIne7GB",
+    "customerName" : "K9i5ysCxqJeIsysUx0rHX6yTi"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Customer" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/customers/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

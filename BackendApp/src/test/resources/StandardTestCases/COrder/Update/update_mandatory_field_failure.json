@@ -1,0 +1,123 @@
+{
+  "name" : "UPDATE_MANDATORY_FIELD_FAILURE",
+  "description" : "Update mandatory field failure",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.COrder",
+  "outputModelName" : "",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "NlpmvBHBM8zAqnbpbxxuWzA6T",
+      "customerContact" : "YsMOsesb9LnrN0eLrgquy3Jc6",
+      "customerNo" : "aXLQ2lzXJxZfVmIO8A3U1T6DC",
+      "customerName" : "0k2dc9NfAfUtle2p4W0bogyen"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "TRiwKu0ux8Qk2tL0BAqCg4BvB",
+      "productName" : "pt1YAriYvi3Yqr9KIOdoHkIO8"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : {
+      "productId" : {
+        "mappedColumns" : [ "productId" ],
+        "tableRecordNo" : 1,
+        "tableName" : "CProduct"
+      },
+      "customerNo" : {
+        "mappedColumns" : [ "customerNo" ],
+        "tableRecordNo" : 1,
+        "tableName" : "Customer"
+      }
+    },
+    "inputData" : {
+      "orderNo" : "PcppwGoWeb7Ed8SWnJH792Bj2",
+      "quantity" : 358,
+      "price" : 149.84
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/corders/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "COrder"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "foreignKeyConfiguration" : {
+      "productId" : {
+        "mappedColumns" : [ "productId" ],
+        "tableRecordNo" : 1,
+        "tableName" : "CProduct"
+      },
+      "customerNo" : {
+        "mappedColumns" : [ "customerNo" ],
+        "tableRecordNo" : 1,
+        "tableName" : "Customer"
+      }
+    },
+    "serviceType" : "UPDATE",
+    "inputData" : {
+      "quantity" : 358,
+      "price" : 149.84
+    },
+    "method" : "PUT",
+    "requestUrl" : "/rest/corders/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "COrder"
+    },
+    "userName" : "AppAdmin"
+  },
+  "responseCode" : 400,
+  "errorMessage" : {
+    "STATUS_CODE" : 400,
+    "ERROR_CODE" : "VALIDATION",
+    "MESSAGE" : "VALIDATION",
+    "DETAIL" : [ {
+      "ERROR_CODE" : "BLANK_VALUE",
+      "MESSAGE" : "`orderNo` value cannot be blank"
+    } ]
+  },
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Customer" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/customers/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    },
+    "COrder" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/corders/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    },
+    "CProduct" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/cproducts/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "name" : "DELETE_MULTIPLE_RECORDS",
+  "description" : "Delete multiple records",
+  "inputModelName" : "",
+  "outputModelName" : "",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "4nxg6W49CWvrGO2snIzflQ3Nl",
+      "productName" : "CmxG0KkH0C4pntNgdLvWegf5z"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "EnK6LnV6amryAylE4ADWvHRZ2",
+      "productName" : "cewaXpIOZNdT08QPGNT6emhb3"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 2,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "o9QeK1GcGxdBPsIbNHxnBDEiX",
+      "productName" : "ez9fNIELJJvRyybXoNgik6iDn"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 3,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "T8Sr0f13UUoCpoPkciGkXMgfu",
+      "productName" : "PlsmtN5OGCyyYgKAD4SRFMpli"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 4,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "vxe30EKjofUo9RZJGLCrrYreU",
+      "productName" : "ywF6mmtP1FaXArshswNk4xazT"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 5,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "DELETE_MULTIPLE_RECORDS",
+    "method" : "DELETE",
+    "requestUrl" : "/rest/cproducts/{ids}",
+    "userName" : "AppAdmin"
+  },
+  "deleteRecordInfo" : [ {
+    "tableRecordNo" : 1,
+    "tableName" : "CProduct"
+  }, {
+    "tableRecordNo" : 2,
+    "tableName" : "CProduct"
+  }, {
+    "tableRecordNo" : 3,
+    "tableName" : "CProduct"
+  }, {
+    "tableRecordNo" : 4,
+    "tableName" : "CProduct"
+  }, {
+    "tableRecordNo" : 5,
+    "tableName" : "CProduct"
+  } ],
+  "outputData" : [ ],
+  "responseCode" : 200,
+  "verifyUsingService" : true,
+  "verificationRequestDetails" : {
+    "method" : "GET",
+    "requestUrl" : "/rest/cproducts/{sid}",
+    "expectedResponseCode" : 204,
+    "userName" : "AppAdmin"
+  }
+}

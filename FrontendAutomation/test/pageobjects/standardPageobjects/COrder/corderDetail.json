@@ -1,0 +1,30 @@
+{
+  "components" : [ {
+    "name" : "Form",
+    "tests" : [ {
+      "name" : "Form",
+      "testcases" : [ ]
+    }, {
+      "name" : "Order No",
+      "testcases" : [ ]
+    }, {
+      "name" : "Customer No",
+      "testcases" : [ ]
+    }, {
+      "name" : "Product ID",
+      "testcases" : [ ]
+    }, {
+      "name" : "Quantity",
+      "testcases" : [ ]
+    }, {
+      "name" : "Price",
+      "testcases" : [ ]
+    } ]
+  } ],
+  "pageUrl" : "/#/corder/corderdetail",
+  "elementConfirm" : {
+    "selector" : "#main-container",
+    "time" : 3000
+  },
+  "pageName" : "COrder detail"
+}

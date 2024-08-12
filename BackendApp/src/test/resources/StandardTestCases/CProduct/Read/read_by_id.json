@@ -1,0 +1,46 @@
+{
+  "name" : "READ_BY_ID",
+  "description" : "Read by id",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.CProduct",
+  "outputModelName" : "com.minatogithuborg.customerqview.model.CProduct",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "U3MFX3jqSm0ObmxxrOVO6bqIu",
+      "productName" : "DakzmereRJsJVaZKreFcr2mpW"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "GET_BY_SID",
+    "method" : "GET",
+    "requestUrl" : "/rest/cproducts/{sid}",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ {
+    "productId" : "U3MFX3jqSm0ObmxxrOVO6bqIu",
+    "productName" : "DakzmereRJsJVaZKreFcr2mpW"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "CProduct" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/cproducts/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

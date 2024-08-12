@@ -1,0 +1,85 @@
+{
+  "name" : "DELETE_BY_ID",
+  "description" : "Delete by id",
+  "inputModelName" : "",
+  "outputModelName" : "",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "nlQa8MXfLgpyDQCdR8gyCsJBb",
+      "customerContact" : "USNLbRsxk4ReihmVHx1zE7PLF",
+      "customerNo" : "zav0JjdimhmnuaAjTPWCUnwKm",
+      "customerName" : "JkiNE93EVKF3WwKuqdSJlbvKC"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "A56LTRkEORYIw2w489MuzCjBc",
+      "productName" : "MnqVWgC3qHx9NgRfEiJwHryXn"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : {
+      "productId" : {
+        "mappedColumns" : [ "productId" ],
+        "tableRecordNo" : 1,
+        "tableName" : "CProduct"
+      },
+      "customerNo" : {
+        "mappedColumns" : [ "customerNo" ],
+        "tableRecordNo" : 1,
+        "tableName" : "Customer"
+      }
+    },
+    "inputData" : {
+      "orderNo" : "SUxdumBxx1RJVMtCsgOqr23BW",
+      "quantity" : 749,
+      "price" : 551.81
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/corders/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "COrder"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "DELETE_BY_IDS",
+    "method" : "DELETE",
+    "requestUrl" : "/rest/corders/{ids}",
+    "userName" : "AppAdmin"
+  },
+  "deleteRecordInfo" : [ {
+    "tableRecordNo" : 1,
+    "tableName" : "COrder"
+  } ],
+  "outputData" : [ ],
+  "responseCode" : 200,
+  "verifyUsingService" : true,
+  "verificationRequestDetails" : {
+    "method" : "GET",
+    "requestUrl" : "/rest/corders/{sid}",
+    "expectedResponseCode" : 204,
+    "userName" : "AppAdmin"
+  }
+}

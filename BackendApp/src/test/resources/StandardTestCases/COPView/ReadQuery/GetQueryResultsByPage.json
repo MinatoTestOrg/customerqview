@@ -1,0 +1,16 @@
+{
+  "name" : "GetQueryResultsByPage",
+  "description" : "Get query results by page",
+  "inputModelName" : "",
+  "outputModelName" : "",
+  "setUp" : [ ],
+  "requestDetails" : {
+    "serviceType" : "GET_QUERY_RESULTS_BY_PAGE",
+    "method" : "POST",
+    "requestUrl" : "/rest/copviews/getresults",
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ ],
+  "responseCode" : 200,
+  "tearDown" : { }
+}

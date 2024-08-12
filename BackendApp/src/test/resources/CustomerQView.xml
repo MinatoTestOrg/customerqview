@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="1" name="Testcustomerqview">
+	<packages>
+			<package name="com.minatogithuborg.customerqview.apitest.COrder"></package>
+			<package name="com.minatogithuborg.customerqview.apitest.CProduct"></package>
+			<package name="com.minatogithuborg.customerqview.apitest.Customer"></package>
+			<package name="com.minatogithuborg.customerqview.apitest.COPView"></package>
+		</packages>
+	</test>
+</suite> 

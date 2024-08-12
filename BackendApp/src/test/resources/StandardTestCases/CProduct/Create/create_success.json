@@ -1,0 +1,32 @@
+{
+  "name" : "CREATE_SUCCESS",
+  "description" : "Create success",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.CProduct",
+  "outputModelName" : "com.minatogithuborg.customerqview.model.CProduct",
+  "setUp" : [ ],
+  "requestDetails" : {
+    "serviceType" : "CREATE",
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  },
+  "outputData" : [ {
+    "productId" : "5h3FPcfksQvvPTMAZzzju6Hr3",
+    "productName" : "4m9ofYwkaulUG536LYSlc7ah8"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "CProduct" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/cproducts/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

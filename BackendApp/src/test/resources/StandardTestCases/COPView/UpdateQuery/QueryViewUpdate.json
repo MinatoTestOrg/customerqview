@@ -1,0 +1,22 @@
+{
+  "name" : "QueryViewUpdate",
+  "description" : "Query view update",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.COPView",
+  "outputModelName" : "com.minatogithuborg.customerqview.model.COPView",
+  "setUp" : [ ],
+  "requestDetails" : {
+    "serviceType" : "UPDATE-QUERY_VIEW",
+    "inputData" : { },
+    "method" : "PUT",
+    "requestUrl" : "/rest/copviews/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "COPView"
+    },
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : { }
+}

@@ -1,0 +1,25 @@
+{
+  "create" : {
+    "requestDetails" : {
+      "method" : "POST",
+      "requestUrl" : "/rest/customers/",
+      "inputData" : [ {
+        "customerAddress" : "IMIMSCvpBXbS2McbJl24WXtFA",
+        "customerContact" : "vTfSXudRB6nB3agZTn4TXgHsj",
+        "customerNo" : "5nfEBITUEQlznyHHUDDNkvOlT",
+        "customerName" : "62ZFFOEm8bIM7rwXs1TAWD5Kx"
+      }, {
+        "customerAddress" : "Hq2NJnKrbKvluJ9jSc1mdZ46c",
+        "customerContact" : "Lm9EJAMjUArlDN4ZrJ3hTFnWw",
+        "customerNo" : "EhLn4tRaQd5ji1MTqvKXvXavu",
+        "customerName" : "JfZ0jhTjR53GhWakSeYjH1GHD"
+      } ]
+    }
+  },
+  "delete" : {
+    "requestDetails" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/customers/{ids}"
+    }
+  }
+}

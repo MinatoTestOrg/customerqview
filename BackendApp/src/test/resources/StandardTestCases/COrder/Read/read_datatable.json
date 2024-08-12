@@ -1,0 +1,232 @@
+{
+  "name" : "READ_DATATABLE",
+  "description" : "Read datatable",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.",
+  "outputModelName" : "com.minatogithuborg.customerqview.model.",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "xkPmO6iN7pm1HMy7nuoQQ5fqw",
+      "customerContact" : "UG1KCrdIAEEz6ClTQI8UCspCD",
+      "customerNo" : "8eaKrO1SJr967RpzmTFiV5Xm8",
+      "customerName" : "wJUXfFC7LEM54OapBGiLFLRIw"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "tU4ntqQgLudUrj2xCpg8lDU8q",
+      "productName" : "shuCqTZm5HvaFiel5ehlR3ZC3"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : {
+      "productId" : {
+        "mappedColumns" : [ "productId" ],
+        "tableRecordNo" : 1,
+        "tableName" : "CProduct"
+      },
+      "customerNo" : {
+        "mappedColumns" : [ "customerNo" ],
+        "tableRecordNo" : 1,
+        "tableName" : "Customer"
+      }
+    },
+    "inputData" : {
+      "orderNo" : "acInO0uKl6FT1oSC9VMoK3GUk",
+      "quantity" : 889,
+      "price" : 873.12
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/corders/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "COrder"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : {
+      "productId" : {
+        "mappedColumns" : [ "productId" ],
+        "tableRecordNo" : 1,
+        "tableName" : "CProduct"
+      },
+      "customerNo" : {
+        "mappedColumns" : [ "customerNo" ],
+        "tableRecordNo" : 1,
+        "tableName" : "Customer"
+      }
+    },
+    "inputData" : {
+      "orderNo" : "FpH0NbwK1XBKuCjBeB6pqFGUD",
+      "quantity" : 782,
+      "productId" : "yszqNS01LKnvTDRAmk89is4W4",
+      "price" : 546.64,
+      "customerNo" : "FmPODFqEhoyw4xIL8aqSmKV9x"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/corders/",
+    "recordInfo" : {
+      "tableRecordNo" : 2,
+      "tableName" : "COrder"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : {
+      "productId" : {
+        "mappedColumns" : [ "productId" ],
+        "tableRecordNo" : 1,
+        "tableName" : "CProduct"
+      },
+      "customerNo" : {
+        "mappedColumns" : [ "customerNo" ],
+        "tableRecordNo" : 1,
+        "tableName" : "Customer"
+      }
+    },
+    "inputData" : {
+      "orderNo" : "r1fWrOH5uuIKE7eIaf0wYf9I0",
+      "quantity" : 846,
+      "productId" : "JJkdpSR4Bmewejyhf7ELKBLqb",
+      "price" : 617.97,
+      "customerNo" : "LaoEBli8ahmpI4PU5iVGFSSaQ"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/corders/",
+    "recordInfo" : {
+      "tableRecordNo" : 3,
+      "tableName" : "COrder"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : {
+      "productId" : {
+        "mappedColumns" : [ "productId" ],
+        "tableRecordNo" : 1,
+        "tableName" : "CProduct"
+      },
+      "customerNo" : {
+        "mappedColumns" : [ "customerNo" ],
+        "tableRecordNo" : 1,
+        "tableName" : "Customer"
+      }
+    },
+    "inputData" : {
+      "orderNo" : "xql79SQVAuN5QUmlsHBoXF07M",
+      "quantity" : 183,
+      "productId" : "QDPN6tKe2BbSSonMmkrYXpGef",
+      "price" : 691.33,
+      "customerNo" : "unxnXwlZfKSJVl8KWURcQ6x5f"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/corders/",
+    "recordInfo" : {
+      "tableRecordNo" : 4,
+      "tableName" : "COrder"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : {
+      "productId" : {
+        "mappedColumns" : [ "productId" ],
+        "tableRecordNo" : 1,
+        "tableName" : "CProduct"
+      },
+      "customerNo" : {
+        "mappedColumns" : [ "customerNo" ],
+        "tableRecordNo" : 1,
+        "tableName" : "Customer"
+      }
+    },
+    "inputData" : {
+      "orderNo" : "8FMLhZONMhEzwuLyZUGwbJtAL",
+      "quantity" : 110,
+      "productId" : "BvnPKDb7wBUxE8mXee7uQJmNr",
+      "price" : 903.64,
+      "customerNo" : "R5Py1n8rPTyxCJiGwlXN7ht36"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/corders/",
+    "recordInfo" : {
+      "tableRecordNo" : 5,
+      "tableName" : "COrder"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "GET_DATATABLE",
+    "inputData" : {
+      "start" : 0,
+      "length" : 5,
+      "search" : { },
+      "columns" : [ {
+        "data" : "orderNo",
+        "name" : "orderNo",
+        "orderable" : true,
+        "searchable" : true
+      } ],
+      "order" : [ {
+        "column" : "createdDate",
+        "dir" : "desc"
+      } ]
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/corders/datatable",
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ {
+    "orderNo" : "acInO0uKl6FT1oSC9VMoK3GUk"
+  }, {
+    "orderNo" : "FpH0NbwK1XBKuCjBeB6pqFGUD"
+  }, {
+    "orderNo" : "r1fWrOH5uuIKE7eIaf0wYf9I0"
+  }, {
+    "orderNo" : "xql79SQVAuN5QUmlsHBoXF07M"
+  }, {
+    "orderNo" : "8FMLhZONMhEzwuLyZUGwbJtAL"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Customer" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/customers/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    },
+    "COrder" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/corders/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    },
+    "CProduct" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/cproducts/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

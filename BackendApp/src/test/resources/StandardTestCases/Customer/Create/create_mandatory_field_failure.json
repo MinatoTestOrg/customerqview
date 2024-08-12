@@ -1,0 +1,34 @@
+{
+  "name" : "CREATE_MANDATORY_FIELD_FAILURE",
+  "description" : "Create mandatory field failure",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.Customer",
+  "outputModelName" : "",
+  "requestDetails" : {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "w2azMu1sh2T1xOlgGmoOrKnWB",
+      "customerContact" : "5pLkx9ejPL0bzyxqZeQUZj7ax",
+      "customerName" : "vPtgbilQJs4uDl5EV9pQXcrsy"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  },
+  "responseCode" : 400,
+  "errorMessage" : {
+    "STATUS_CODE" : 400,
+    "ERROR_CODE" : "VALIDATION",
+    "MESSAGE" : "VALIDATION",
+    "DETAIL" : [ {
+      "ERROR_CODE" : "BLANK_VALUE",
+      "MESSAGE" : "`customerNo` value cannot be blank"
+    } ]
+  },
+  "verifyUsingService" : false
+}

@@ -1,0 +1,57 @@
+{
+  "name" : "UPDATE_SUCCESS",
+  "description" : "Update success",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.Customer",
+  "outputModelName" : "com.minatogithuborg.customerqview.model.Customer",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "meI2zDeO24Rk8NgdKwInPW9Lc",
+      "customerContact" : "0TaSvBaz5i89fbvKoHxFpjPxR",
+      "customerNo" : "jxu7TI7H7TI1uZhi3jsBWv1Kq",
+      "customerName" : "72uJanHVbPq1mBwL26TO1KtDR"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "foreignKeyConfiguration" : { },
+    "serviceType" : "UPDATE",
+    "inputData" : {
+      "customerAddress" : "ph1ltoQ6vyWUGjCedKW3dqzb9",
+      "customerContact" : "ITAGKc7RNN07dzbWP91Ci6Ulg",
+      "customerNo" : "HDFw9juFzNtEiit8fsF5elYhb",
+      "customerName" : "uHFfFgSrokYj752CgVgSKO2AX"
+    },
+    "method" : "PUT",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ {
+    "customerAddress" : "ph1ltoQ6vyWUGjCedKW3dqzb9",
+    "customerContact" : "ITAGKc7RNN07dzbWP91Ci6Ulg",
+    "customerNo" : "HDFw9juFzNtEiit8fsF5elYhb",
+    "customerName" : "uHFfFgSrokYj752CgVgSKO2AX"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Customer" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/customers/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

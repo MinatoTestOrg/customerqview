@@ -1,0 +1,9 @@
+{
+  "components" : [ ],
+  "pageUrl" : "/#/customer/customerlist",
+  "elementConfirm" : {
+    "selector" : "#main-container",
+    "time" : 3000
+  },
+  "pageName" : "Customer list"
+}

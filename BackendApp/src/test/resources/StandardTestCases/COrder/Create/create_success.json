@@ -1,0 +1,77 @@
+{
+  "name" : "CREATE_SUCCESS",
+  "description" : "Create success",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.COrder",
+  "outputModelName" : "com.minatogithuborg.customerqview.model.COrder",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "9y5bzphQIdexLRtbHXIr4eFKX",
+      "customerContact" : "q5O71tbmSVB0AAdfWDzkkKgnK",
+      "customerNo" : "zk3srf90W00k5m7uLOp4sZTnM",
+      "customerName" : "BwIU0piSEwaTygwU0M7AamS0N"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "Eud6N0aK8BaWb6nxW9vY6k0vZ",
+      "productName" : "ctut17NA5teDJ2Gu0IPKhhile"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "CREATE",
+    "method" : "POST",
+    "requestUrl" : "/rest/corders/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "COrder"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  },
+  "outputData" : [ {
+    "orderNo" : "Sn9FMdpR0cRqySBwhK9ij6R8s",
+    "quantity" : 865,
+    "price" : 261.27
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Customer" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/customers/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    },
+    "COrder" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/corders/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    },
+    "CProduct" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/cproducts/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

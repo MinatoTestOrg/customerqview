@@ -1,0 +1,50 @@
+{
+  "name" : "READ_BY_ID",
+  "description" : "Read by id",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.Customer",
+  "outputModelName" : "com.minatogithuborg.customerqview.model.Customer",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "4P9X2PZc6TqdVZK8oZ9DzUB1a",
+      "customerContact" : "xWeouGzqDgFIx1rb3ODwZRqX2",
+      "customerNo" : "jbPxrTgW4rmCTnBXjvaYaVRT8",
+      "customerName" : "ZnBPV25JddKU79yiIifP6jh9q"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "GET_BY_SID",
+    "method" : "GET",
+    "requestUrl" : "/rest/customers/{sid}",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ {
+    "customerAddress" : "4P9X2PZc6TqdVZK8oZ9DzUB1a",
+    "customerContact" : "xWeouGzqDgFIx1rb3ODwZRqX2",
+    "customerNo" : "jbPxrTgW4rmCTnBXjvaYaVRT8",
+    "customerName" : "ZnBPV25JddKU79yiIifP6jh9q"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Customer" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/customers/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

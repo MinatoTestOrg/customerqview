@@ -1,0 +1,120 @@
+{
+  "name" : "READ_DATATABLE",
+  "description" : "Read datatable",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.",
+  "outputModelName" : "com.minatogithuborg.customerqview.model.",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "esswOrXjpYNsvbdazllOU9GoL",
+      "productName" : "1wuFOBjyN7qXlVLeNUK0m7Bhk"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "CuCiMD9j4qG20E7Gl7ByBbGon",
+      "productName" : "lAtgRXPpAutwzoZ7hk28zNzMC"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 2,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "vypA2xoEo4vP7JSMIR6LR0WIw",
+      "productName" : "LVsPHEc8iVCo5rU65dr18NNbB"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 3,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "aD3fFz2hlbYzDqu9ELTQQ4YHz",
+      "productName" : "oHhKfWlwegwr9v6kqTwmXIHp5"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 4,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  }, {
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "3IcgfDRCuHaHpGWBsJqLCr1xQ",
+      "productName" : "kIyexjPgY0cu9yMD1oPO2bDFe"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 5,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "serviceType" : "GET_DATATABLE",
+    "inputData" : {
+      "start" : 0,
+      "length" : 5,
+      "search" : { },
+      "columns" : [ {
+        "data" : "productId",
+        "name" : "productId",
+        "orderable" : true,
+        "searchable" : true
+      } ],
+      "order" : [ {
+        "column" : "createdDate",
+        "dir" : "desc"
+      } ]
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/datatable",
+    "userName" : "AppAdmin"
+  },
+  "outputData" : [ {
+    "productId" : "esswOrXjpYNsvbdazllOU9GoL"
+  }, {
+    "productId" : "CuCiMD9j4qG20E7Gl7ByBbGon"
+  }, {
+    "productId" : "vypA2xoEo4vP7JSMIR6LR0WIw"
+  }, {
+    "productId" : "aD3fFz2hlbYzDqu9ELTQQ4YHz"
+  }, {
+    "productId" : "3IcgfDRCuHaHpGWBsJqLCr1xQ"
+  } ],
+  "responseCode" : 200,
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "CProduct" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/cproducts/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

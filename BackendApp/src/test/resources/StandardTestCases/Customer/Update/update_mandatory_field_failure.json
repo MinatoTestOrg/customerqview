@@ -1,0 +1,59 @@
+{
+  "name" : "UPDATE_MANDATORY_FIELD_FAILURE",
+  "description" : "Update mandatory field failure",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.Customer",
+  "outputModelName" : "",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "customerAddress" : "FE4CExUGSPqoGq2cvOuuiBWpm",
+      "customerContact" : "auhlBpqCLZyylq0aFCX3iUlOa",
+      "customerNo" : "w6hHeKz7OFGVjGReOHFinTeMx",
+      "customerName" : "VMiS6A465OCmNgtoHdShFphVi"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "foreignKeyConfiguration" : { },
+    "serviceType" : "UPDATE",
+    "inputData" : {
+      "customerAddress" : "FE4CExUGSPqoGq2cvOuuiBWpm",
+      "customerContact" : "auhlBpqCLZyylq0aFCX3iUlOa",
+      "customerName" : "VMiS6A465OCmNgtoHdShFphVi"
+    },
+    "method" : "PUT",
+    "requestUrl" : "/rest/customers/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "Customer"
+    },
+    "userName" : "AppAdmin"
+  },
+  "responseCode" : 400,
+  "errorMessage" : {
+    "STATUS_CODE" : 400,
+    "ERROR_CODE" : "VALIDATION",
+    "MESSAGE" : "VALIDATION",
+    "DETAIL" : [ {
+      "ERROR_CODE" : "BLANK_VALUE",
+      "MESSAGE" : "`customerNo` value cannot be blank"
+    } ]
+  },
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "Customer" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/customers/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name" : "CREATE_MANDATORY_FIELD_FAILURE",
+  "description" : "Create mandatory field failure",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.CProduct",
+  "outputModelName" : "",
+  "requestDetails" : {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productName" : "pUEp9JviWgjqZELNRKGM0a7cK"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  },
+  "responseCode" : 400,
+  "errorMessage" : {
+    "STATUS_CODE" : 400,
+    "ERROR_CODE" : "VALIDATION",
+    "MESSAGE" : "VALIDATION",
+    "DETAIL" : [ {
+      "ERROR_CODE" : "BLANK_VALUE",
+      "MESSAGE" : "`productId` value cannot be blank"
+    } ]
+  },
+  "verifyUsingService" : false
+}

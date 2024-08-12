@@ -1,0 +1,21 @@
+{
+  "create" : {
+    "requestDetails" : {
+      "method" : "POST",
+      "requestUrl" : "/rest/cproducts/",
+      "inputData" : [ {
+        "productId" : "EddpqUgqziiTv8KHS9yhtVi8Z",
+        "productName" : "6NRdoDnaXlfaz9YXaUSI3sNVu"
+      }, {
+        "productId" : "jgYqKjRR0s4rv2fOByzBKAIMC",
+        "productName" : "4Anq9z3tbwLtzWNfmCKUgYtQU"
+      } ]
+    }
+  },
+  "delete" : {
+    "requestDetails" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/cproducts/{ids}"
+    }
+  }
+}

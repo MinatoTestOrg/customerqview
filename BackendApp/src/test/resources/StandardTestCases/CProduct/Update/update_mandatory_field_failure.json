@@ -1,0 +1,55 @@
+{
+  "name" : "UPDATE_MANDATORY_FIELD_FAILURE",
+  "description" : "Update mandatory field failure",
+  "inputModelName" : "com.minatogithuborg.customerqview.model.CProduct",
+  "outputModelName" : "",
+  "setUp" : [ {
+    "serviceType" : "CREATE",
+    "foreignKeyConfiguration" : { },
+    "inputData" : {
+      "productId" : "2GK2pndVGCz55w2pdkVh19FJB",
+      "productName" : "PHMvNWDgjJ0SVqxma9AeAH44F"
+    },
+    "method" : "POST",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin",
+    "fileAttachmentInfo" : [ ]
+  } ],
+  "requestDetails" : {
+    "foreignKeyConfiguration" : { },
+    "serviceType" : "UPDATE",
+    "inputData" : {
+      "productName" : "PHMvNWDgjJ0SVqxma9AeAH44F"
+    },
+    "method" : "PUT",
+    "requestUrl" : "/rest/cproducts/",
+    "recordInfo" : {
+      "tableRecordNo" : 1,
+      "tableName" : "CProduct"
+    },
+    "userName" : "AppAdmin"
+  },
+  "responseCode" : 400,
+  "errorMessage" : {
+    "STATUS_CODE" : 400,
+    "ERROR_CODE" : "VALIDATION",
+    "MESSAGE" : "VALIDATION",
+    "DETAIL" : [ {
+      "ERROR_CODE" : "BLANK_VALUE",
+      "MESSAGE" : "`productId` value cannot be blank"
+    } ]
+  },
+  "verifyUsingService" : false,
+  "tearDown" : {
+    "CProduct" : {
+      "method" : "DELETE",
+      "requestUrl" : "/rest/cproducts/{ids}",
+      "clearRecordsAfterTest" : true,
+      "userName" : "AppAdmin"
+    }
+  }
+}

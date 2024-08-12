@@ -1,0 +1,167 @@
+
+<div class="detail corder-detail" *ngIf="showGrid">
+ <div class="wrokflow-simulate" *ngIf="showWorkflowSimulator">
+        <span class="arrow_box">Workflow Simulator</span>
+        <button pButton pRipple type="button" icon="pi pi-cog" class="p-button-rounded wrokflow-simulate-btn"  [fitContent]="false"  (click)="openWorkflowSimilator()"></button>
+    </div>
+   <div id="title-bar">
+    <div class="display">
+        <div class="col" class="page-title-bar" *ngIf="(isMobile && !isSearchFocused) || !isMobile">
+            <!-- <span class="pi pi-arrow-left back-action"></span> -->
+            <span class="page-title" [innerHTML]="pageViewTitle | translate"></span>
+             <span class="filters-banner" *ngIf="(mappedFiltersDisplay | keyvalue).length > 0" [title]="tooltipText"> (
+                    <span *ngFor="let filter of mappedFiltersDisplay| keyvalue ; let isLast = last">
+                        <span [textContent]="filter.key"></span> :
+                        <span [textContent]="filter.value"></span>
+                        <span *ngIf="!isLast">,</span>
+                </span>
+                    )
+                </span>
+        </div>
+        <div class="w-100"  *ngIf="showBreadcrumb"> <app-breadcrumb></app-breadcrumb></div>
+     <app-action-bar [buttons] = "leftActionBarConfig.children"
+(onBtnClick)='actionBarAction($event)'
+[style.order]="isMobile?'1':'0'"
+[isRowSelected]="isRowSelected" [isChildListpage]="isChildPage"
+[isListPage]="isList" [detailConditionalButtons]="conditionalActions">
+</app-action-bar><app-workflow-action-bar [buttons] = "workflowActionBarConfig.children"
+(onBtnClick)='workflowActionBarAction($event)'
+[workflow]="workflowActions"
+[style.order]="isMobile?'1':'0'" [style.overflow]="'hidden'">
+</app-workflow-action-bar>
+    </div>
+</div><ul class="nav  caption-bar" *ngIf="detailCaptionBarConfig?.children?.length > 0 && data.sid" [ngStyle]="{width: detailCaptionBarConfig.width, 'justify-content':detailCaptionBarConfig.align}" id="caption-bar">
+    <li class="nav-item" *ngFor="let captionItem of detailCaptionBarConfig.children" [style.display]="((captionItem.showOn =='mobile_only' && isMobile) || (captionItem.showOn =='desktop_only' && !isMobile) || (captionItem.showOn =='both')||(!captionItem.showOn))?'block':'none'">
+        <div class="card" *ngIf="data && formattedCaptionData && formattedCaptionData[captionItem.field]">
+            <div class="card-body">
+                <h5 class="card-title">{{captionItem.label | translate}}</h5>
+                <div *ngIf="!captionItem.render" class="card-sub-title" [innerHTML]="formattedCaptionData[captionItem.field]">
+                </div>
+                <div *ngIf="captionItem.render" class="card-sub-title">
+                    <div [innerHtml]="captionItem.render(captionItem)"></div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul><div class="ev-detail-view" id="detail-view-container">
+    <div class="detail-flex-box">
+        <div class="flex align-items-center justify-content-center wizard-container col-2" *ngIf="wizardItems?.length && showScrollSpy" id="detail-wizard">
+            <p-tieredMenu #menu [model]="wizardItems"></p-tieredMenu>
+        </div>
+ <div class="missing-filters-banner" *ngIf="!showForm">
+            <i class="pi pi-exclamation-triangle"></i>
+            <span [innerHtml]="filtersEmptyMsg">
+            </span>
+        </div>
+        <div class="flex align-items-center justify-content-center form-container" *ngIf="showForm">
+            <form class="ev-form " [formGroup]="detailFormControls" #detailForm [ngClass]="{'read-only-fields':enableReadOnly,  'read-only-form':!tableaccess}">
+                <div class="row form-body">
+                    <div class="form-row vg-col-2">
+                        <div class="form-col" [hidden]="hiddenFields.orderNo" id="orderNo">
+    <div class="field-row"  [ngClass]="{'required': formFieldConfig?.orderNo?.isRequired, 'error':inValidFields.orderNo}">
+        <label for="orderNo" class="col-form-label orderNo-label" [textContent]=" 'ORDER_NO'|translate "></label>
+        <span class="info-bubble" *ngIf="formFieldConfig?.orderNo?.infoBubble"   [pTooltip]="formFieldConfig?.orderNo?.infoBubble || ''"><i class="fa fa-circle-info"></i></span>
+        <input type="text" pInputText class="form-control" formControlName="orderNo" [placeholder]="formFieldConfig?.orderNo?.placeHolder || ''"
+[maxlength]="formFieldConfig?.orderNo?.maxLength" />
+        <div class="fst-italic fs-5 help-text">{{formFieldConfig?.orderNo?.helpText || ''}}</div>
+    </div>
+</div><div class="form-col" [hidden]="hiddenFields.customerNo" id="customerNo">
+    <div class="field-row"  [ngClass]="{'required': formFieldConfig?.customerNo?.isRequired, 'error':inValidFields.customerNo}">
+        <label for="customerNo" class="col-form-label customerNo-label" [textContent]="'CUSTOMER_NO'|translate"></label>
+        <span class="info-bubble" *ngIf="formFieldConfig?.customerNo?.infoBubble"   [pTooltip]="formFieldConfig?.customerNo?.infoBubble || ''"><i class="fa fa-circle-info"></i></span>
+        <p-autoComplete 
+            [placeholder]="formFieldConfig?.customerNo?.placeHolder || 'Select'"
+            class="form-input" 
+            formControlName="customerNo" 
+             [forceSelection]="true" 
+            [suggestions]="filteredItemsdetailFormcustomerNo" 
+            completeOnFocus="false" [dropdown]="true"
+           (onShow)="attachInfiniteScrollForAutoCompletedetailFormcustomerNo('customerNo')"   (completeMethod)="autoSuggestSearchdetailFormcustomerNo($event,formFieldConfig?.customerNo)"
+            [multiple]="formFieldConfig?.customerNo?.multiple" (onHide)="autoSuggestPageNo = 0;filteredItemsdetailFormcustomerNo = []; isAutoSuggestCallFireddetailFormcustomerNo = false;" [field]="'displayField'"
+    (onSelect)="onSelectdetailForm($event,'customerNo',formFieldConfig?.customerNo)" (onUnselect)="unSelectdetailForm($event,'customerNo',formFieldConfig?.customerNo?.multiple,formFieldConfig?.customerNo)" appendTo="body"
+(onClear)="unSelectdetailForm($event,'customerNo',formFieldConfig?.customerNo?.multiple,formFieldConfig?.customerNo)"
+>
+<ng-template let-item pTemplate="item">
+                <div [innerHTML]  = "formatAutoComplete(item,formFieldConfig?.customerNo,'customerNo')"></div>
+            </ng-template>
+        </p-autoComplete>
+        <div class="fst-italic fs-5 help-text">{{formFieldConfig?.customerNo?.helpText || ''}}</div>
+    </div>
+</div><div class="form-col" [hidden]="hiddenFields.productId" id="productId">
+    <div class="field-row"  [ngClass]="{'required': formFieldConfig?.productId?.isRequired, 'error':inValidFields.productId}">
+        <label for="productId" class="col-form-label productId-label" [textContent]="'PRODUCT_ID'|translate"></label>
+        <span class="info-bubble" *ngIf="formFieldConfig?.productId?.infoBubble"   [pTooltip]="formFieldConfig?.productId?.infoBubble || ''"><i class="fa fa-circle-info"></i></span>
+        <p-autoComplete 
+            [placeholder]="formFieldConfig?.productId?.placeHolder || 'Select'"
+            class="form-input" 
+            formControlName="productId" 
+             [forceSelection]="true" 
+            [suggestions]="filteredItemsdetailFormproductId" 
+            completeOnFocus="false" [dropdown]="true"
+           (onShow)="attachInfiniteScrollForAutoCompletedetailFormproductId('productId')"   (completeMethod)="autoSuggestSearchdetailFormproductId($event,formFieldConfig?.productId)"
+            [multiple]="formFieldConfig?.productId?.multiple" (onHide)="autoSuggestPageNo = 0;filteredItemsdetailFormproductId = []; isAutoSuggestCallFireddetailFormproductId = false;" [field]="'displayField'"
+    (onSelect)="onSelectdetailForm($event,'productId',formFieldConfig?.productId)" (onUnselect)="unSelectdetailForm($event,'productId',formFieldConfig?.productId?.multiple,formFieldConfig?.productId)" appendTo="body"
+(onClear)="unSelectdetailForm($event,'productId',formFieldConfig?.productId?.multiple,formFieldConfig?.productId)"
+>
+<ng-template let-item pTemplate="item">
+                <div [innerHTML]  = "formatAutoComplete(item,formFieldConfig?.productId,'productId')"></div>
+            </ng-template>
+        </p-autoComplete>
+        <div class="fst-italic fs-5 help-text">{{formFieldConfig?.productId?.helpText || ''}}</div>
+    </div>
+</div><div class="form-col" [hidden]="hiddenFields.quantity" id="quantity">
+        <div class="field-row"
+                [ngClass]="{'required': formFieldConfig?.quantity?.isRequired, 'error':inValidFields.quantity}">
+                <label for="quantity" class="col-form-label quantity-label"
+                        [textContent]="'QUANTITY'|translate"></label>
+                <span class="info-bubble" *ngIf="formFieldConfig?.quantity?.infoBubble"
+                        [pTooltip]="formFieldConfig?.quantity?.infoBubble || ''"><i
+                                class="fa fa-circle-info"></i></span>
+                 <span class="warning-bubble" *ngIf="calculationError?.quantity">
+                        <i class="pi pi-exclamation-triangle"></i>
+                        <span class="warning-text">{{'CALCULATION_ERROR' | translate}}</span>
+                </span>
+                <p-inputNumber class="form-input" formControlName="quantity"
+                        [placeholder]="formFieldConfig?.quantity?.placeHolder || ''"
+                        [showButtons]="formFieldConfig?.quantity?.showButtons"
+                                               [suffix]="(formFieldConfig?.quantity?.suffix)?(' '+((formFieldConfig?.quantity?.suffix)?.trim())):''"
+                        [prefix]="(formFieldConfig?.quantity?.prefix)? ((formFieldConfig?.quantity?.prefix)?.trim())+ ' ':''"
+                        [useGrouping]="formFieldConfig?.quantity?.useGrouping"
+                        [locale]="defaultLocale"></p-inputNumber>
+                <div class="fst-italic fs-5 help-text">{{formFieldConfig?.quantity?.helpText ||
+                        ''}}</div>
+        </div>
+</div><div class="form-col" [hidden]="hiddenFields.price" id="price">
+        <div class="field-row"
+                [ngClass]="{'required': formFieldConfig?.price?.isRequired, 'error':inValidFields.price}">
+                <label for="price" class="col-form-label price-label"
+                        [textContent]="'PRICE'|translate"></label>
+                <span class="info-bubble" *ngIf="formFieldConfig?.price?.infoBubble"
+                        [pTooltip]="formFieldConfig?.price?.infoBubble || ''"><i
+                                class="fa fa-circle-info"></i></span>
+                   <span class="warning-bubble" *ngIf="calculationError?.price">
+                        <i class="pi pi-exclamation-triangle"></i>
+                        <span class="warning-text">{{'CALCULATION_ERROR' | translate}}</span>
+                </span>
+                <p-inputNumber class="form-input" formControlName="price"
+                        [placeholder]="formFieldConfig?.price?.placeHolder || ''" mode="decimal"
+                        [showButtons]="formFieldConfig?.price?.showButtons"
+                                               [suffix]="(formFieldConfig?.price?.suffix)?(' '+((formFieldConfig?.price?.suffix)?.trim())):''"
+                        [prefix]="(formFieldConfig?.price?.prefix)? ((formFieldConfig?.price?.prefix)?.trim())+ ' ':''"
+                        [minFractionDigits]="formFieldConfig?.price?.minFraction || minFraction"
+                        [maxFractionDigits]="formFieldConfig?.price?.maxFraction || maxFraction || minFraction"
+                        [locale]="defaultLocale"></p-inputNumber>
+                <div class="fst-italic fs-5 help-text">{{formFieldConfig?.price?.helpText ||
+                        ''}}</div>
+        </div>
+</div>
+                    </div>
+                </div>
+        </form>
+        </div>
+    </div>
+</div>
+<span *ngIf="this.dynamicDialogConfig?.data?.popup" class="detail-popup-close-icon" (click)="onPopupClose()">
+    <i class="pi pi-times"></i>
+</span>
+</div>

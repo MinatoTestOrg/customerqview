@@ -7,9 +7,9 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "customerAddress" : "w2azMu1sh2T1xOlgGmoOrKnWB",
-      "customerContact" : "5pLkx9ejPL0bzyxqZeQUZj7ax",
-      "customerName" : "vPtgbilQJs4uDl5EV9pQXcrsy"
+      "customerAddress" : "ak6Qj6SLUaff3m6qw9GqKpVEp",
+      "customerContact" : "WQtBDilhwOabygVsMKpBw8rtm",
+      "customerName" : "LBlPPBrrBgj6yFEPx4iIVmLh4"
     },
     "method" : "POST",
     "requestUrl" : "/rest/customers/",

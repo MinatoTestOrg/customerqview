@@ -4,13 +4,13 @@
       "method" : "POST",
       "requestUrl" : "/rest/corders/",
       "inputData" : [ {
-        "orderNo" : "ZOy3gvjbUQAYjReDaKHGoQHaL",
-        "quantity" : 723,
-        "price" : 894.44
+        "orderNo" : "kDBtrUuEfMQTjNnQKnqu99xNQ",
+        "quantity" : 258,
+        "price" : 648.16
       }, {
-        "orderNo" : "jeGYYAMvapZx474VC7w4wd0Xj",
-        "quantity" : 720,
-        "price" : 218.27
+        "orderNo" : "3h0Eiu8nZRnEkSMz6ZQWDdUQn",
+        "quantity" : 120,
+        "price" : 309.66
       } ]
     }
   },

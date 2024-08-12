@@ -7,7 +7,7 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productName" : "pUEp9JviWgjqZELNRKGM0a7cK"
+      "productName" : "6UNXA7vV7LL9QgsiPI0gSxZeR"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",

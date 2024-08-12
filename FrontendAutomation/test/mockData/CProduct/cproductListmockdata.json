@@ -4,11 +4,11 @@
       "method" : "POST",
       "requestUrl" : "/rest/cproducts/",
       "inputData" : [ {
-        "productId" : "EddpqUgqziiTv8KHS9yhtVi8Z",
-        "productName" : "6NRdoDnaXlfaz9YXaUSI3sNVu"
+        "productId" : "R0Fb7XVlZGCWNxLxU2B51I6Yh",
+        "productName" : "dvKuK7REogSzcQkwXNvWTZAOw"
       }, {
-        "productId" : "jgYqKjRR0s4rv2fOByzBKAIMC",
-        "productName" : "4Anq9z3tbwLtzWNfmCKUgYtQU"
+        "productId" : "BqAybOiuDwhFbWAPuXyPeJTiy",
+        "productName" : "yqELKJ4QLctGy4295eWvmJSif"
       } ]
     }
   },

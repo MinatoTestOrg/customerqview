@@ -7,10 +7,10 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "customerAddress" : "FE4CExUGSPqoGq2cvOuuiBWpm",
-      "customerContact" : "auhlBpqCLZyylq0aFCX3iUlOa",
-      "customerNo" : "w6hHeKz7OFGVjGReOHFinTeMx",
-      "customerName" : "VMiS6A465OCmNgtoHdShFphVi"
+      "customerAddress" : "Dk8qENbqKadFwhghwm6bZRi5j",
+      "customerContact" : "9wy4z1zpdYzOaoIia5tBAXVXv",
+      "customerNo" : "VxgrHf1t0YeL8vp9neKKJjvhR",
+      "customerName" : "0iAQf0rHvdELZtt3aXizKXu47"
     },
     "method" : "POST",
     "requestUrl" : "/rest/customers/",
@@ -25,9 +25,9 @@
     "foreignKeyConfiguration" : { },
     "serviceType" : "UPDATE",
     "inputData" : {
-      "customerAddress" : "FE4CExUGSPqoGq2cvOuuiBWpm",
-      "customerContact" : "auhlBpqCLZyylq0aFCX3iUlOa",
-      "customerName" : "VMiS6A465OCmNgtoHdShFphVi"
+      "customerAddress" : "Dk8qENbqKadFwhghwm6bZRi5j",
+      "customerContact" : "9wy4z1zpdYzOaoIia5tBAXVXv",
+      "customerName" : "0iAQf0rHvdELZtt3aXizKXu47"
     },
     "method" : "PUT",
     "requestUrl" : "/rest/customers/",

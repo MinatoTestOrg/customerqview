@@ -7,8 +7,8 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "WEc5PAA3qEU4w7T8PwWTwMrpP",
-      "productName" : "B9IRKP6emzXzdRkWE2Rcxlu0V"
+      "productId" : "jMl5YfjmbqbTOnBUUN8mG5tpf",
+      "productName" : "o8h0TKtRE08Rba3W5F2Jnfhuu"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -21,8 +21,8 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "r0VxMUMNGNvl8J5B5UZ7B3H9t",
-      "productName" : "C6aTbNOjOpEzgRXDClgZe7HsQ"
+      "productId" : "RY3yYM7sLikwwDHFA3g2wGsho",
+      "productName" : "ipnpwvpFgKWwQt4hZhLsh6Pfl"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -35,8 +35,8 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "D1tmGW3BjaStVMwnRYyMkHwUN",
-      "productName" : "lj8d6xbqsFJjTnXUrvUt0oF3M"
+      "productId" : "AARepMEmsGpWmIvXWuGUd077t",
+      "productName" : "Q0pc4EqG0OGSY5dln4UqWmuzr"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -49,8 +49,8 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "0ssQjei53sIweiUQNISEK1Krn",
-      "productName" : "sLCcBvonftxqpooowTPfw4Yrc"
+      "productId" : "N9jLMVrjQHm5NqBSC0aXFmQ8b",
+      "productName" : "eVg9I1ml1Xrm6a1BTM7RjuDMg"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -63,8 +63,8 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "IlveFvAt3CT6AEsPKl6ezquPj",
-      "productName" : "PUqf3KsDIDKyJ1nkrLHjibwyA"
+      "productId" : "0NmXJfdjrFfdeypiGiUgKtyI0",
+      "productName" : "UCsmdSc7LtZHlw5uB3BNWmCQW"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",

@@ -204,7 +204,7 @@ outputMappingFieldsConfig:any ={};
   "children" : [ ]
 }
 	detailFormConfig : any = {
-  "queryViewMandatoryFilters" : [ "orderno", "customerno", "productid" ],
+  "queryViewMandatoryFilters" : [ ],
   "outline" : false,
   "disabledFieldsByLookup" : [ ],
   "children" : [ ],

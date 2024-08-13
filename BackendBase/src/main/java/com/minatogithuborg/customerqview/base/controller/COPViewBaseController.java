@@ -3,12 +3,6 @@ package com.minatogithuborg.customerqview.base.controller;
 
 import java.util.List;
 import com.vs.rappit.base.dal.Filter;
-import com.vs.rappit.base.dal.SimpleFilter;
-import com.vs.rappit.base.exception.ValidationException;
-import org.apache.commons.lang.StringUtils;
-import java.util.Set;	
-import java.util.HashSet;
-import com.vs.rappit.base.util.Constants;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -56,16 +50,4 @@ public abstract class COPViewBaseController<SERVICE extends ICOPViewBaseService<
 		return logic.getQueryResultsByPage(dataTable);
 	}
 	
-	@Override
-	public void validateMandatoryFilters(List<Filter> filterList) {
-		Set<String> mandatoryFilters = new HashSet<>(Set.of("orderno","customerno","productid"));
-		for (Filter filter : filterList) {
-			SimpleFilter simpleFilter = (SimpleFilter) filter;
-			if (mandatoryFilters.contains(simpleFilter.getField()) && simpleFilter.getValue() != null) {
-				mandatoryFilters.remove(simpleFilter.getField());
-			}
-		}
-		if (mandatoryFilters.isEmpty()) { return; }
-		throw new ValidationException("MANDATORY_FILTER_MISSING", StringUtils.join(mandatoryFilters, Constants.COMMA));
-	}
 }

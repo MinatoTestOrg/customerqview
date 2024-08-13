@@ -7,10 +7,10 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "customerAddress" : "PGuGmJfIfbqbNo7KDFJJkxYtC",
-      "customerContact" : "V1nYGIcAFpRfbfJUVrYEFKP9i",
-      "customerNo" : "eO3sRVtwAjNvHQQcnTUnC405H",
-      "customerName" : "0FVkYyRMuCYagi7WxxvEkGMXd"
+      "customerAddress" : "y6U3VEA6mj89uYzjctJwYoNEx",
+      "customerContact" : "XwUHNIPZneVoY2sa8oQt9Thcf",
+      "customerNo" : "JPKAD36yhdWqZJatHCW7dYv3z",
+      "customerName" : "6k00LaSqThUlahfDoaSBzR2UB"
     },
     "method" : "POST",
     "requestUrl" : "/rest/customers/",
@@ -24,8 +24,8 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "UenG8zziLlFCFcRsBK8giksjE",
-      "productName" : "9r26tMVUUyyJOVKbqrakgDDz9"
+      "productId" : "VgeFJLydSR6Ca0lvpnAZ7g5rj",
+      "productName" : "SnjKOqjHGcUrz3gkyG4Y2fAem"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -50,9 +50,9 @@
       }
     },
     "inputData" : {
-      "orderNo" : "bTplvWdcV5TMUTNRtS0vTQEOh",
-      "quantity" : 107,
-      "price" : 883.05
+      "orderNo" : "heJwWhF5deOr6KSmXoGHIFwz3",
+      "quantity" : 644,
+      "price" : 134.87
     },
     "method" : "POST",
     "requestUrl" : "/rest/corders/",

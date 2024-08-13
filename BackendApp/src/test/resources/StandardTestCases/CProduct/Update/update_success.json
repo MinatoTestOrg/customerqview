@@ -7,8 +7,8 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "iCwmJ2rTxFiAhr28c84nQwuVa",
-      "productName" : "XHmyhHgmffWfH8cwWNUskDLfW"
+      "productId" : "D50hYteAHSZbxsii4vcRMm5Il",
+      "productName" : "0MlQoqK2p31Gi6HS8b2qbEOFh"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -23,8 +23,8 @@
     "foreignKeyConfiguration" : { },
     "serviceType" : "UPDATE",
     "inputData" : {
-      "productId" : "V4TUM1noPy7IvRztD0dH5y2zP",
-      "productName" : "ycqClOt30pjfzJxedjkbJsrWD"
+      "productId" : "hMlrLEBBPwNLNEL0QvlaaHlmz",
+      "productName" : "Vi4iGzgj1yQSIASyHLc4Nv7T8"
     },
     "method" : "PUT",
     "requestUrl" : "/rest/cproducts/",
@@ -35,8 +35,8 @@
     "userName" : "AppAdmin"
   },
   "outputData" : [ {
-    "productId" : "V4TUM1noPy7IvRztD0dH5y2zP",
-    "productName" : "ycqClOt30pjfzJxedjkbJsrWD"
+    "productId" : "hMlrLEBBPwNLNEL0QvlaaHlmz",
+    "productName" : "Vi4iGzgj1yQSIASyHLc4Nv7T8"
   } ],
   "responseCode" : 200,
   "verifyUsingService" : false,

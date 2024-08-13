@@ -7,8 +7,8 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "MLSUvgRWBDGhg5DT3XeFo9qyy",
-      "productName" : "b09kd1obmgRQFiUnuJKsl9w6X"
+      "productId" : "uutIBlFjuMYFguVgMq7AipduO",
+      "productName" : "ez8DUpaiQAf9D4Uzf9S6TDd4f"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",

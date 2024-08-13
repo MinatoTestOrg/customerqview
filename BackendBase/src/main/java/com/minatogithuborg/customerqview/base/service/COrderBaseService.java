@@ -35,6 +35,11 @@ import com.vs.rappit.base.exception.EntityReferenceExistsException;
 import com.vs.rappit.dataimport.constants.ImportTaskConstants;
 import org.apache.commons.lang3.StringUtils;
 import com.minatogithuborg.customerqview.base.model.COrderBase;
+import com.minatogithuborg.customerqview.base.model.CorderLookup1Response;
+import java.util.ArrayList;
+
+import java.util.List;
+
 import java.util.List;
 
 import com.vs.rappit.base.dal.providers.DBOptions;
@@ -48,6 +53,18 @@ import com.vs.rappit.base.dal.Filter.Operator;
 import com.vs.rappit.base.dal.SimpleFilter;
 
 import org.apache.commons.lang3.StringUtils;
+
+import com.vs.rappit.base.exception.InternalException;
+
+import com.vs.rappit.base.util.FieldUtils;
+
+import org.springframework.util.MultiValueMap;
+
+import java.util.Map;
+
+import com.vs.rappit.base.exception.ValidationError;
+
+import com.vs.rappit.base.rest.APIConstants;
 public class COrderBaseService<T extends COrderBase> extends BaseJPABusinessLogic<T>
 		implements ICOrderBaseService<T> {
 		
@@ -203,13 +220,40 @@ public class COrderBaseService<T extends COrderBase> extends BaseJPABusinessLogi
 		this.changelogService=changelogService;
 	}
 
+		@Override
+	public List<Filter> getCorderLookup1InputFilters(Map<String, Object> params) {
+		List<Filter> filters = new ArrayList<>();
+		List<ValidationError> validationErrors = new ArrayList<>();
+		List<String> missingMandatoryRequestParams = new ArrayList<>();
+				// Optional filters
+		if (params.get("orderNo") != null && !APIConstants.UNDEFINED.equals(params.get("orderNo"))) {
+			filters.add(new SimpleFilter("orderNo", FieldUtils.getValue(params.get("orderNo").toString(), String.class, "OrderNo", validationErrors, false, "", "", "")));
+		}
+
+		
+		return filters;
+	}    
+
+
+
 	
 
 
+
 	
-
-
-
+	@Override
+	public List<Object> getCorderLookup1MappedResponse(List<Object> listToBeTransformed) {
+		List<Object> responseList = new ArrayList<>();
+		if(listToBeTransformed!=null) {
+			for(Object obj : listToBeTransformed) {
+				CorderLookup1Response lookUpResponse = new CorderLookup1Response();
+				COrderBase  corderBase = (COrderBase) obj;
+					lookUpResponse.setOrderNo(corderBase.getOrderNo());
+				responseList.add(lookUpResponse);
+			}
+		}
+		return responseList;
+	}
 	protected IPerimeterManager<T> getPerimeterManager() {
 		return corderPerimeterBaseImpl;
 	}

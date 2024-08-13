@@ -72,7 +72,31 @@
                     <i class="pi pi-angle-left"></i>
                 </span>
              <div class="row align-filter quick-filter-fields" [id]="localStorageStateKey" [ngClass]="quickFilterConfig.style ==='style_2'? 'rowfiltercolumnfilter':'columnfilter'">
-                
+                <div class="form-col" [hidden]="hiddenFields.orderno" id="orderno">
+    <div class="field-row"  [ngClass]="{'required': quickFilterFieldConfig?.orderno?.isRequired, 'error':inValidFields.orderno}">
+        <label for="orderno" class="col-form-label orderno-label" [textContent]=" 'ORDERNO'|translate "></label>
+        <span class="info-bubble" *ngIf="quickFilterFieldConfig?.orderno?.infoBubble"   [pTooltip]="quickFilterFieldConfig?.orderno?.infoBubble || ''"><i class="fa fa-circle-info"></i></span>
+        <input type="text" pInputText class="form-control" formControlName="orderno" [placeholder]="quickFilterFieldConfig?.orderno?.placeHolder || ''"
+[maxlength]="quickFilterFieldConfig?.orderno?.maxLength" />
+        <div class="fst-italic fs-5 help-text">{{quickFilterFieldConfig?.orderno?.helpText || ''}}</div>
+    </div>
+</div><div class="form-col" [hidden]="hiddenFields.customerno" id="customerno">
+    <div class="field-row"  [ngClass]="{'required': quickFilterFieldConfig?.customerno?.isRequired, 'error':inValidFields.customerno}">
+        <label for="customerno" class="col-form-label customerno-label" [textContent]=" 'CUSTOMERNO'|translate "></label>
+        <span class="info-bubble" *ngIf="quickFilterFieldConfig?.customerno?.infoBubble"   [pTooltip]="quickFilterFieldConfig?.customerno?.infoBubble || ''"><i class="fa fa-circle-info"></i></span>
+        <input type="text" pInputText class="form-control" formControlName="customerno" [placeholder]="quickFilterFieldConfig?.customerno?.placeHolder || ''"
+[maxlength]="quickFilterFieldConfig?.customerno?.maxLength" />
+        <div class="fst-italic fs-5 help-text">{{quickFilterFieldConfig?.customerno?.helpText || ''}}</div>
+    </div>
+</div><div class="form-col" [hidden]="hiddenFields.productid" id="productid">
+    <div class="field-row"  [ngClass]="{'required': quickFilterFieldConfig?.productid?.isRequired, 'error':inValidFields.productid}">
+        <label for="productid" class="col-form-label productid-label" [textContent]=" 'PRODUCTID'|translate "></label>
+        <span class="info-bubble" *ngIf="quickFilterFieldConfig?.productid?.infoBubble"   [pTooltip]="quickFilterFieldConfig?.productid?.infoBubble || ''"><i class="fa fa-circle-info"></i></span>
+        <input type="text" pInputText class="form-control" formControlName="productid" [placeholder]="quickFilterFieldConfig?.productid?.placeHolder || ''"
+[maxlength]="quickFilterFieldConfig?.productid?.maxLength" />
+        <div class="fst-italic fs-5 help-text">{{quickFilterFieldConfig?.productid?.helpText || ''}}</div>
+    </div>
+</div>
             </div>
             <span class="right-arrow  qf-arrow-controls" (click)="scrollFilterFieldsList('right', $event)" *ngIf="checkIfScrollbarVisible()">
                     <i class="pi pi-angle-right"></i>

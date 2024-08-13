@@ -9,6 +9,9 @@
       ]
     },
     "get": {
+      "/lookup/corderlookup1": [
+        "App Admin"
+      ],
       "/{sid}": [
         "App Admin"
       ],

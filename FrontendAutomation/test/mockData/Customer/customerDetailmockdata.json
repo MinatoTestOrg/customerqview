@@ -4,15 +4,15 @@
       "method" : "POST",
       "requestUrl" : "/rest/customers/",
       "inputData" : [ {
-        "customerAddress" : "SzMVWQqljjSKZl3B5kiuMnkEa",
-        "customerContact" : "UdnhGqXDM2yIaG9gSHpXsrRXi",
-        "customerNo" : "iuZBPIbJerKr1nkDbQ89ba1BM",
-        "customerName" : "SExBzWBMR4AFNsu8GuARNAL9l"
+        "customerAddress" : "taUY1DmbssOcS3sYYscncdn7s",
+        "customerContact" : "HgPNRdZT0R8ZINPdVbloiF1pj",
+        "customerNo" : "Z0HZhb9EzXpcwcLiEP9SXEuyB",
+        "customerName" : "zWu5qI3uWfI8Y6J2qhGg9s0zR"
       }, {
-        "customerAddress" : "5cCKgcXvEutUVnwS0Gvvm2uxv",
-        "customerContact" : "SKtM8kReYHCMqOMkYYjwfSbuK",
-        "customerNo" : "zvdS7h66XY1PFwmIpknehvBBr",
-        "customerName" : "r5wfArxRCWRNwOREPSkOEtN2T"
+        "customerAddress" : "vP8z4hzWcSw1cdZmnpaAE06aV",
+        "customerContact" : "TWBnc8FUzLV5Ja3zi2iKsmKEh",
+        "customerNo" : "PrC1FurnkICmcz5BRzhnCri57",
+        "customerName" : "u4ptsdebPblFJqBB7YQL0eQLZ"
       } ]
     }
   },

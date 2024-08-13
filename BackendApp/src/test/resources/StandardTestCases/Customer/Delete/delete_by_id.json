@@ -7,10 +7,10 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "customerAddress" : "tFZxFde4dD5VLtVQ8SP2FsWHr",
-      "customerContact" : "wnA6bXWJGWRrGk0EDHV4ISQc1",
-      "customerNo" : "GYljLNuoSzJTZNEOVtIN0YQTB",
-      "customerName" : "hJniGwfSylCmTtBLbtJM9wKzV"
+      "customerAddress" : "XnURmIiWpl2QdwV4cLOCjldNK",
+      "customerContact" : "DUodXpVkK0irDGzsDvJFtjSdx",
+      "customerNo" : "cHx5rmcD3HU7TukFPzYuTTZWC",
+      "customerName" : "r7mpG1cqx8wfqNBNOBfqkEVMx"
     },
     "method" : "POST",
     "requestUrl" : "/rest/customers/",

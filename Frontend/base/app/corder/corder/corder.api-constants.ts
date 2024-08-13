@@ -26,6 +26,11 @@ export class CorderApiConstants {
         method: 'DELETE',
         showloading: true
     };
+    public static readonly lookupCOrderLookup1: any = {
+        url: '/rest/corders/lookup/corderlookup1',
+        method: 'GET',
+        showloading: false
+    };
     public static readonly update: any = {
         url: '/rest/corders/',
         method: 'PUT',

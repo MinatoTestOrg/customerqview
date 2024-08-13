@@ -7,10 +7,10 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "customerAddress" : "hIXt4eWFgvBfsamM0444Ir2cH",
-      "customerContact" : "1Dp5OKtwqmTQbrxDZp3guRR0s",
-      "customerNo" : "SO6Bj582xpJJKf2PXNPSCTIG4",
-      "customerName" : "tkph0mDEoiKcNpSoNz4ThyhCI"
+      "customerAddress" : "M2wTlunO3zJDsIYmZBhRTMTTO",
+      "customerContact" : "XZT8lzaqLUVFghYMxg7XFizy6",
+      "customerNo" : "59ZtPsiWdjiuTllkxRVBUYPu8",
+      "customerName" : "nPKP6LbUyaLAFTUShbVzxvPse"
     },
     "method" : "POST",
     "requestUrl" : "/rest/customers/",
@@ -24,8 +24,8 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "okPFxo9LODGSTTfZgQXAL1Nbt",
-      "productName" : "WYsZ3p9QgKyAXcE2HjSv7QseL"
+      "productId" : "KHZAPut3pUlZQLrU3oIle24Ap",
+      "productName" : "I9TVsFOQTQGzJ3WW7aI5RKp7j"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -48,9 +48,9 @@
     "fileAttachmentInfo" : [ ]
   },
   "outputData" : [ {
-    "orderNo" : "vvR0iZKV0J3SwKzGNzOz0jLyu",
-    "quantity" : 565,
-    "price" : 645.97
+    "orderNo" : "KNcoi7oZLeruLXXayJPofx0hQ",
+    "quantity" : 342,
+    "price" : 794.5
   } ],
   "responseCode" : 200,
   "verifyUsingService" : false,

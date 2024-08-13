@@ -149,7 +149,11 @@ public abstract class COPViewPerimeterBaseImpl<T extends COPViewBase> implements
 			allowedFields.setAllowedReadFields(allowedAccessFieldList);
 			return;
 		}
-		
+					if (BooleanUtils.isTrue(userBase.isAppAdmin())) {
+			String[] readFields = new String[] {ORDERNO, CUSTOMERNO, PRODUCTID};
+			allowedAccessFields.addAll(Arrays.asList(readFields));
+		}
+
 		List<String> allowedAccessFieldList = new ArrayList<>(allowedAccessFields);
 		allowedFields.setAllowedReadFields(allowedAccessFieldList);
 	}
@@ -160,7 +164,11 @@ public abstract class COPViewPerimeterBaseImpl<T extends COPViewBase> implements
 			allowedFields.setAllowedWriteFields(allowedAccessFieldList);
 			return;
 		}
-		
+					if (BooleanUtils.isTrue(userBase.isAppAdmin())) {
+			String[] readFields = new String[] {ORDERNO, CUSTOMERNO, PRODUCTID};
+			allowedAccessFields.addAll(Arrays.asList(readFields));
+		}
+
 		List<String> allowedAccessFieldList = new ArrayList<>(allowedAccessFields);
 		allowedFields.setAllowedWriteFields(allowedAccessFieldList);
 	}

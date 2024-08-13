@@ -137,6 +137,21 @@ public baseService = inject(BaseService);
     
         return subject;
     }
+    lookupCOrderLookup1(...args: any):Observable<any>{
+        const serviceOpts = CorderApiConstants.lookupCOrderLookup1;
+        const params= args[0];
+        
+        const subject = new Observable(observer => {
+          this.baseService.get(serviceOpts,params).subscribe((response: any) => {
+            observer.next(response);
+          },
+          (err:any) => {
+            observer.error(err);
+          });
+        });
+    
+        return subject;
+    }
     update(...args: any):Observable<any>{
         const serviceOpts = CorderApiConstants.update;
         const params= args[0];

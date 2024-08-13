@@ -7,8 +7,8 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "JEHV4n1vRq6PDUQT3YmcZ7Fvb",
-      "productName" : "5Kdngo9bCFIBffYDkpYtqoG3T"
+      "productId" : "kemmRLMh7axmA1diw07bNGQ87",
+      "productName" : "3HhyPjSvqE383cYyL7eQt6dKB"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -21,8 +21,8 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "ovvuiycM5SvDCuOnt0EZGlS7d",
-      "productName" : "Jp4YOkD5wcclt5rWrdHGzZibd"
+      "productId" : "BPWpge8t7lFad1H5G5wNJmTHq",
+      "productName" : "eqxPzSDkGeCPj1wCMcSqlK31c"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -35,8 +35,8 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "C8o9S913uVvmNrLStMFvSbSPb",
-      "productName" : "iT1XWPFUGXoGAUoOPEOIJd2NM"
+      "productId" : "TJVQZgQpIUvckWkbC5q24od48",
+      "productName" : "aU1MjNIYJ3sdaCUr8RqvBBLU8"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -49,8 +49,8 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "MDFRYuCHpImPbAd5czTnjuW5I",
-      "productName" : "LEGkMNulc2JA7TabyQamv5k0e"
+      "productId" : "A8JaNUftgj3fyNWWU56Wt3lCB",
+      "productName" : "egZWiW9M5sFkVkWqmNPNS7yv1"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -63,8 +63,8 @@
   }, {
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "HD7yerp6WJZKXXX4xjXGnjBg5",
-      "productName" : "7cU4DLxA5LorYH5CjO6EuN8P7"
+      "productId" : "ix7N45RHv2r7YjscNTIBLUauh",
+      "productName" : "P6bGS5REumU8SGuaXenxb04m7"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -97,15 +97,15 @@
     "userName" : "AppAdmin"
   },
   "outputData" : [ {
-    "productId" : "JEHV4n1vRq6PDUQT3YmcZ7Fvb"
+    "productId" : "kemmRLMh7axmA1diw07bNGQ87"
   }, {
-    "productId" : "ovvuiycM5SvDCuOnt0EZGlS7d"
+    "productId" : "BPWpge8t7lFad1H5G5wNJmTHq"
   }, {
-    "productId" : "C8o9S913uVvmNrLStMFvSbSPb"
+    "productId" : "TJVQZgQpIUvckWkbC5q24od48"
   }, {
-    "productId" : "MDFRYuCHpImPbAd5czTnjuW5I"
+    "productId" : "A8JaNUftgj3fyNWWU56Wt3lCB"
   }, {
-    "productId" : "HD7yerp6WJZKXXX4xjXGnjBg5"
+    "productId" : "ix7N45RHv2r7YjscNTIBLUauh"
   } ],
   "responseCode" : 200,
   "verifyUsingService" : false,

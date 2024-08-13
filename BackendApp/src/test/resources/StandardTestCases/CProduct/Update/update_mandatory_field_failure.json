@@ -7,8 +7,8 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "tZS1PWzorDDCImx4a2do1CzZm",
-      "productName" : "uUsSMQzxZyUPy6H0bWq5nsSf7"
+      "productId" : "WdU6LO1ng7P4DGlpJv19lMOWW",
+      "productName" : "JwmPyJnpN0DqXwaCSoBdUxmcn"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -23,7 +23,7 @@
     "foreignKeyConfiguration" : { },
     "serviceType" : "UPDATE",
     "inputData" : {
-      "productName" : "uUsSMQzxZyUPy6H0bWq5nsSf7"
+      "productName" : "JwmPyJnpN0DqXwaCSoBdUxmcn"
     },
     "method" : "PUT",
     "requestUrl" : "/rest/cproducts/",

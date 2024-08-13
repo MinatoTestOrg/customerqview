@@ -8,5 +8,6 @@ import com.minatogithuborg.customerqview.base.model.COPViewBase;
 import com.vs.rappit.base.logic.ICRUDViewOperation;
 
 public interface ICOPViewBaseService<T extends COPViewBase> extends ICRUDViewOperation<T> {
+	public List<Filter> getInputFilters(Map<String, Object> params);
 	
 }

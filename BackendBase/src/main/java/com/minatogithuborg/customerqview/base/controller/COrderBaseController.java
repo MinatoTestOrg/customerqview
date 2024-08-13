@@ -105,6 +105,17 @@ public abstract class COrderBaseController<SERVICE extends ICOrderBaseService<M>
 	}
 
 
+	@GetMapping(path = "/lookup/corderlookup1", produces = "application/json")
+	public List<Object> lookupCOrderLookup1(@RequestParam MultiValueMap<String, Object> queryParams) {
+		Map<String, Object> params = queryParams.toSingleValueMap();
+		List<Filter> filters = new ArrayList<>();
+		filters = logic.getCorderLookup1InputFilters(params);
+		return logic.getCorderLookup1MappedResponse(super.autosuggest(filters, params));
+
+	}
+
+
+
 	@PutMapping
 	public M update(@RequestBody M modelObj) {
 		return super.update(modelObj);

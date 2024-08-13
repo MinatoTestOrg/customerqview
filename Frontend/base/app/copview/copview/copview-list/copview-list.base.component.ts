@@ -249,7 +249,40 @@ hasMappedParameters:boolean = false;
 	quickFilterConfig : any = {
   "outline" : false,
   "disabledFieldsByLookup" : [ ],
-  "children" : [ ],
+  "children" : [ {
+    "fieldName" : "orderno",
+    "data" : "",
+    "field" : "orderno",
+    "name" : "orderno",
+    "uiType" : "text",
+    "isPrimaryKey" : false,
+    "label" : "ORDERNO",
+    "type" : "filterField",
+    "fieldType" : "string",
+    "fieldId" : "orderno"
+  }, {
+    "fieldName" : "customerno",
+    "data" : "",
+    "field" : "customerno",
+    "name" : "customerno",
+    "uiType" : "text",
+    "isPrimaryKey" : false,
+    "label" : "CUSTOMERNO",
+    "type" : "filterField",
+    "fieldType" : "string",
+    "fieldId" : "customerno"
+  }, {
+    "fieldName" : "productid",
+    "data" : "",
+    "field" : "productid",
+    "name" : "productid",
+    "uiType" : "text",
+    "isPrimaryKey" : false,
+    "label" : "PRODUCTID",
+    "type" : "filterField",
+    "fieldType" : "string",
+    "fieldId" : "productid"
+  } ],
   "type" : "quickFilter",
   "queryViewMapping" : { }
 }
@@ -277,7 +310,7 @@ hasMappedParameters:boolean = false;
   "detailPageAppId" : "ce0274a5-c894-44ff-965c-88530306f8d2",
   "rowSpacing" : "medium",
   "rowHeight" : "medium",
-  "queryViewMandatoryFilters" : [ ],
+  "queryViewMandatoryFilters" : [ "orderno", "customerno", "productid" ],
   "striped" : true,
   "recordSelection" : "multiple_records",
   "infiniteScroll" : false,
@@ -321,6 +354,9 @@ public location = inject(Location);
 });
 
 		quickFilterControls : UntypedFormGroup = new UntypedFormGroup({
+	orderno: new UntypedFormControl('',[]),
+	customerno: new UntypedFormControl('',[]),
+	productid: new UntypedFormControl('',[]),
 });
 
 

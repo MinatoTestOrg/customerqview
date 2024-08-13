@@ -7,8 +7,8 @@
     "serviceType" : "CREATE",
     "foreignKeyConfiguration" : { },
     "inputData" : {
-      "productId" : "5cZ1tDKRDtSEN9dliQiU19iAn",
-      "productName" : "OW85ZvoxYd41Um1XrKAFHmik0"
+      "productId" : "qjCMtk3vXk59b0HcvQaVoHy4s",
+      "productName" : "kp4tvllVvEYpH9Pn9as1THIkf"
     },
     "method" : "POST",
     "requestUrl" : "/rest/cproducts/",
@@ -30,8 +30,8 @@
     "userName" : "AppAdmin"
   },
   "outputData" : [ {
-    "productId" : "5cZ1tDKRDtSEN9dliQiU19iAn",
-    "productName" : "OW85ZvoxYd41Um1XrKAFHmik0"
+    "productId" : "qjCMtk3vXk59b0HcvQaVoHy4s",
+    "productName" : "kp4tvllVvEYpH9Pn9as1THIkf"
   } ],
   "responseCode" : 200,
   "verifyUsingService" : false,
